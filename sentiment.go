@@ -44,6 +44,7 @@ GetJSON unmarshals dynamically the file indicated by filename and returns it
 func getJSON(filename string) map[string]interface{} {
 	jsonStr, _ := ioutil.ReadFile(filename)
 	var f map[string]interface{}
+	fmt.Printf("%s\n", jsonStr)
 
 	if err := json.Unmarshal([]byte(jsonStr), &f); err != nil {
 		panic(err)
