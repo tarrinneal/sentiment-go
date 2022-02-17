@@ -3,7 +3,7 @@ package sentiment
 import (
 	"bytes"
 	"encoding/json"
-	// "fmt"
+	"fmt"
 	"io/ioutil"
 	"regexp"
 	"strings"
